@@ -1,5 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:ride_share/core/constants/strings.dart';
 
 import 'core/constants/routesPage.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Ride Share',
+      title: StringsEn.titleApp,
       routerConfig: router,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
