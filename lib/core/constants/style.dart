@@ -83,6 +83,7 @@ abstract class AppConsts {
   //padding
   static const EdgeInsets mainPadding = EdgeInsets.symmetric(horizontal: 15);
   static const EdgeInsets passing25 = EdgeInsets.symmetric(horizontal: 25);
+  static const EdgeInsets padding40 = EdgeInsets.symmetric(horizontal: 40);
   static const EdgeInsets padding10Horiz = EdgeInsets.symmetric(horizontal: 10);
   static const EdgeInsets padding10h8v =
       EdgeInsets.symmetric(horizontal: 10, vertical: 8);
@@ -95,86 +96,73 @@ abstract class AppConsts {
 
 //radius
   static BorderRadius radius15 = AppConsts.radius15;
-  static BorderRadius radius25=AppConsts.radius25;
+  static BorderRadius radius25 = AppConsts.radius25;
 
   //styles
   static const TextStyle styleHint14 = TextStyle(
     color: AppConsts.neutral400,
     fontSize: 14,
     fontWeight: FontWeight.w400,
-    fontFamily: 'SF Pro Display',
-    fontStyle: FontStyle.normal,
   );
   static const TextStyle style14Bubble = TextStyle(
     color: AppConsts.neutral800,
     fontSize: 14,
     fontWeight: FontWeight.w500,
-    fontFamily: 'SF Pro Display',
-    fontStyle: FontStyle.normal,
   );
   static const TextStyle style20 = TextStyle(
     color: AppConsts.neutral100,
     fontSize: 20,
     fontWeight: FontWeight.w500,
-    fontFamily: 'SF Pro Display',
-    fontStyle: FontStyle.normal,
+
   );
   static const TextStyle style24 = TextStyle(
     color: AppConsts.neutral900,
     fontSize: 24,
     fontWeight: FontWeight.w500,
-    fontFamily: 'SF Pro Display',
-    fontStyle: FontStyle.normal,
+    
   );
   static const TextStyle style28 = TextStyle(
     color: AppConsts.neutral900,
     fontSize: 28,
     fontWeight: FontWeight.w700,
-    fontFamily: 'SF Pro Display',
-    fontStyle: FontStyle.normal,
+    
   );
   static const TextStyle style12 = TextStyle(
     color: AppConsts.neutral600,
     fontSize: 12,
     fontWeight: FontWeight.w400,
-    fontFamily: 'SF Pro Display',
-    fontStyle: FontStyle.normal,
+    
   );
   static const TextStyle style14 = TextStyle(
     color: AppConsts.neutral400,
     fontSize: 14,
     fontWeight: FontWeight.w500,
-    fontFamily: 'SF Pro Display',
-    fontStyle: FontStyle.normal,
+    
   );
   static const TextStyle style16 = TextStyle(
     color: AppConsts.neutral500,
     fontSize: 16,
     fontWeight: FontWeight.w400,
-    fontFamily: 'SF Pro Display',
-    fontStyle: FontStyle.normal,
+    
   );
   static const TextStyle style16White = TextStyle(
     color: AppConsts.neutral100,
     fontSize: 16,
     fontWeight: FontWeight.w500,
-    fontFamily: 'SF Pro Display',
-    fontStyle: FontStyle.normal,
+    
   );
 
   static const TextStyle style32 = TextStyle(
     color: AppConsts.neutral900,
     fontSize: 32,
     fontWeight: FontWeight.w500,
-    fontFamily: 'SF Pro Display',
-    fontStyle: FontStyle.normal,
+    
   );
   static const TextStyle style16Error = TextStyle(
     color: AppConsts.danger500,
     fontSize: 16,
     fontWeight: FontWeight.w500,
-    fontFamily: 'SF Pro Display',
-    fontStyle: FontStyle.normal,
+    
   );
   static OutlineInputBorder normalBorderField = OutlineInputBorder(
     borderRadius: BorderRadius.circular(13),
