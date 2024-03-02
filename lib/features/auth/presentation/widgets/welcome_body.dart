@@ -13,12 +13,13 @@ class WelcomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
+    return ListView(
+      children: const [
         AspectRatio(aspectRatio: AppConsts.aspect16on2),
         AspectRatio(
           aspectRatio: AppConsts.aspect2point5on3,
           child: BoardStructure(
+            scroll: false,
             image: Assets.imagesWelcomeScreen,
             subTitle: StringsEn.haveBetterSharingExperience,
             title: StringsEn.welcome,
@@ -26,6 +27,7 @@ class WelcomeBody extends StatelessWidget {
         ),
         AspectRatio(aspectRatio: AppConsts.aspect16on3),
         ButtonsWelcomeScreen(),
+        AspectRatio(aspectRatio: AppConsts.aspect16on3),
       ],
     );
   }
