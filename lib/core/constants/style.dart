@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 abstract class AppConsts {
+  static const Color mainColor = Color.fromRGBO(108, 220, 90, 1);
   static const Color neutral900 = Color.fromRGBO(17, 24, 39, 1);
   static const Color neutral800 = Color.fromRGBO(31, 41, 55, 1);
   static const Color neutral700 = Color.fromRGBO(55, 65, 81, 1);
@@ -95,8 +96,9 @@ abstract class AppConsts {
   static const EdgeInsets topPadding20 = EdgeInsets.only(top: 20);
 
 //radius
-  static BorderRadius radius15 = AppConsts.radius15;
-  static BorderRadius radius25 = AppConsts.radius25;
+  static BorderRadius radius15 = BorderRadius.circular(15);
+  static BorderRadius radius25 = BorderRadius.circular(25);
+  static BorderRadius radius100 = BorderRadius.circular(100);
 
   //styles
   static const TextStyle styleHint14 = TextStyle(
@@ -113,56 +115,47 @@ abstract class AppConsts {
     color: AppConsts.neutral100,
     fontSize: 20,
     fontWeight: FontWeight.w500,
-
   );
   static const TextStyle style24 = TextStyle(
     color: AppConsts.neutral900,
     fontSize: 24,
     fontWeight: FontWeight.w500,
-    
   );
   static const TextStyle style28 = TextStyle(
     color: AppConsts.neutral900,
     fontSize: 28,
     fontWeight: FontWeight.w700,
-    
   );
   static const TextStyle style12 = TextStyle(
     color: AppConsts.neutral600,
     fontSize: 12,
     fontWeight: FontWeight.w400,
-    
   );
   static const TextStyle style14 = TextStyle(
     color: AppConsts.neutral400,
     fontSize: 14,
     fontWeight: FontWeight.w500,
-    
   );
   static const TextStyle style16 = TextStyle(
     color: AppConsts.neutral500,
     fontSize: 16,
     fontWeight: FontWeight.w400,
-    
   );
   static const TextStyle style16White = TextStyle(
     color: AppConsts.neutral100,
     fontSize: 16,
     fontWeight: FontWeight.w500,
-    
   );
 
   static const TextStyle style32 = TextStyle(
     color: AppConsts.neutral900,
     fontSize: 32,
     fontWeight: FontWeight.w500,
-    
   );
   static const TextStyle style16Error = TextStyle(
     color: AppConsts.danger500,
     fontSize: 16,
     fontWeight: FontWeight.w500,
-    
   );
   static OutlineInputBorder normalBorderField = OutlineInputBorder(
     borderRadius: BorderRadius.circular(13),

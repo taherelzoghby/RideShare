@@ -2,7 +2,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:ride_share/core/helper/custom_animation.dart';
 
-import '../../features/boarding/pages/board_view.dart';
+import '../../features/boarding/presentation/pages/board_view.dart';
 
 const splashPath = '/';
 final router = GoRouter(
