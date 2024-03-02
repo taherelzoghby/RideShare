@@ -88,4 +88,6 @@ class Assets {
   /// Assets for imagesWelcomeScreen
   /// assets/images/welcome_screen.svg
   static const String imagesWelcomeScreen = "assets/images/welcome_screen.svg";
+  static const String imagesFacebook = "assets/images/facebook.png";
+  static const String imagesGoogle = "assets/images/google.png";
 }
