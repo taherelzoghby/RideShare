@@ -20,3 +20,11 @@ List<TextSpan> childrenTerms = const [
     style: TextStyle(color: AppConsts.mainColor),
   ),
 ];
+List<DropdownMenuItem<Gender>> genderList = genders
+    .map<DropdownMenuItem<Gender>>(
+      (Gender item) => DropdownMenuItem<Gender>(
+        value: item,
+        child: Text(item.name),
+      ),
+    )
+    .toList();

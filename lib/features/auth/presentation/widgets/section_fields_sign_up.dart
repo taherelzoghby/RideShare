@@ -12,6 +12,7 @@ class SectionFieldsSignUp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Column(
       children: [
         CustomTextFormField(hint: StringsEn.name),
@@ -37,19 +38,17 @@ class SectionFieldsSignUp extends StatelessWidget {
           suffixIcon: Padding(
             padding: AppConsts.mainPadding,
             child: DropdownButton<Gender>(
-              hint: const Text('gender'),
+              hint: Text(
+                'gender',
+                style: AppConsts.style14.copyWith(
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
               underline: Container(),
               isExpanded: true,
               icon: const Icon(Icons.keyboard_arrow_down_outlined),
               onChanged: (Gender? value) {},
-              items: genders
-                  .map<DropdownMenuItem<Gender>>(
-                    (Gender item) => DropdownMenuItem<Gender>(
-                      value: item,
-                      child: Text(item.name),
-                    ),
-                  )
-                  .toList(),
+              items: genderList,
             ),
           ),
           readOnly: true,
