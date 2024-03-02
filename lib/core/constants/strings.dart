@@ -38,8 +38,10 @@ abstract class StringsEn {
   static const String email = 'Email';
   static const String yourMobilePhone = 'Your mobile number';
   static const String gender = 'Gender';
-  static const String bySigningUp =
-      'By signing up. you agree to the Terms of service and Privacy policy';
+  static const String bySigningUp1 = 'By signing up. you agree to the ';
+  static const String bySigningUp2 = 'Terms of service ';
+  static const String bySigningUp3 = ' and ';
+  static const String bySigningUp4 = 'Privacy policy.';
   static const String signUp = 'Sign Up';
   static const String signUpWithGmail = 'Sign up with Gmail';
   static const String signUpWithFacebook = 'Sign up with Facebook';
@@ -58,6 +60,7 @@ abstract class StringsEn {
   static const String atLeast1Number =
       'At least 1 number or a special character';
   static const String register = 'Register';
+  static const String or = 'or';
   static const String profile = 'Profile';
   static const String fullName = 'Full Name';
   static const String yourMobileNumber = 'Your mobile number';
@@ -73,6 +76,14 @@ abstract class StringsEn {
   static const String forgetPassword = 'Forget password?';
   static const String verificationEmailOrPhoneNumber =
       'Verification email or phone number';
+  static const String warningPass =
+      'Password must be minimum eight characters, at least one uppercase letter, one lowercase letter and one number';
+  static const String enterValid = 'Enter valid ';
+  static const String enterValidEmail = 'Enter valid Email';
+  static const String fieldRequired = 'This Field Required.';
+  static const String eg = 'EG';
+  static const String google = 'Google';
+  static const String facebook = 'Facebook';
 
   //home
   static const String rental = 'Rental';

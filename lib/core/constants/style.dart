@@ -160,8 +160,8 @@ abstract class AppConsts {
     fontWeight: FontWeight.w500,
   );
   static OutlineInputBorder normalBorderField = OutlineInputBorder(
-    borderRadius: BorderRadius.circular(13),
-    borderSide: const BorderSide(color: neutral300, width: 1),
+    borderRadius: BorderRadius.circular(8),
+    borderSide: const BorderSide(color: mainColor, width: 1),
   );
   static BoxDecoration decorationLoadingMap = BoxDecoration(
     borderRadius: AppConsts.radius15,
