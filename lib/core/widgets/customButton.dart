@@ -6,7 +6,7 @@ class CustomButton extends StatelessWidget {
     super.key,
     required this.text,
     required this.onTap,
-    this.background = AppConsts.primary500,
+    this.background = AppConsts.mainColor,
     this.isBorder = false,
     this.styleText = AppConsts.style16White,
   });
@@ -21,13 +21,12 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(15),
+      borderRadius: AppConsts.radius8,
       child: Container(
         decoration: BoxDecoration(
           color: background,
-          borderRadius: BorderRadius.circular(25),
-          //border: isBorder ? Border.all(color: AppConsts.grey) : null,
-          //boxShadow: AppConsts.boxShadows,
+          borderRadius: AppConsts.radius8,
+          border: isBorder ? Border.all(color: AppConsts.mainColor) : null,
         ),
         child: Center(
           child: Text(

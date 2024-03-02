@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 abstract class AppConsts {
-  static const Color mainColor = Color.fromRGBO(108, 220, 90, 1);
+  static const Color mainColor = Color.fromRGBO(8, 183, 131, 1);
+  static const Color white = Colors.white;
   static const Color neutral900 = Color.fromRGBO(17, 24, 39, 1);
   static const Color neutral800 = Color.fromRGBO(31, 41, 55, 1);
   static const Color neutral700 = Color.fromRGBO(55, 65, 81, 1);
@@ -96,6 +97,7 @@ abstract class AppConsts {
   static const EdgeInsets topPadding20 = EdgeInsets.only(top: 20);
 
 //radius
+  static BorderRadius radius8 = BorderRadius.circular(8);
   static BorderRadius radius15 = BorderRadius.circular(15);
   static BorderRadius radius25 = BorderRadius.circular(25);
   static BorderRadius radius100 = BorderRadius.circular(100);

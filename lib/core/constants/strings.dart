@@ -1,5 +1,10 @@
 ///strings by english
 abstract class StringsEn {
+  static const String jpg = 'jpg';
+  static const String svg = 'svg';
+  static const String png = 'png';
+  static const String https = 'https';
+  static const String network = 'network';
   static const String titleApp = 'Ride Share';
   static const String skip = 'Skip';
 
@@ -231,8 +236,7 @@ abstract class StringsEn {
 If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
 This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in rideshare. This policy is not applicable to any information collected offline or via channels other than this website. Our Privacy Policy was created with the help of the Free Privacy Policy Generator.
   """;
-  static const String contactUsForRideShare =
-      'Contact us for Ride share';
+  static const String contactUsForRideShare = 'Contact us for Ride share';
   static const String address = 'Address';
   static const String sendMessage = 'Send Message';
   static const String deleteAccountInfo = """
@@ -240,7 +244,7 @@ This Privacy Policy applies only to our online activities and is valid for visit
 Deleting your account removes personal information our database. Tour email becomes permanently reserved and same email cannot be re-use to register a new account.
   """;
   static const String delete = 'Delete';
-  static const String helpAndSupportInfo ="""
+  static const String helpAndSupportInfo = """
   Lorem ipsum dolor sit amet consectetur. Sit pulvinar mauris mauris eu nibh semper nisl pretium laoreet. Sed non faucibus ac lectus eu arcu. Nulla sit congue facilisis vestibulum egestas nisl feugiat pharetra. Odio sit tortor morbi at orci ipsum dapibus interdum. Lorem felis est aliquet arcu nullam pellentesque. Et habitasse ac arcu et nunc euismod rhoncus facilisis sollicitudin.
   """;
 }
