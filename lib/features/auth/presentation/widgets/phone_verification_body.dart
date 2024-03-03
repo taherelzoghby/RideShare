@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:go_router/go_router.dart';
+import 'package:ride_share/core/constants/routesPage.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
 import 'package:ride_share/core/widgets/customButton.dart';
@@ -34,7 +36,7 @@ class PhoneVerificationBody extends StatelessWidget {
             aspectRatio: AppConsts.aspectRatioButtonAuth,
             child: CustomButton(
               text: StringsEn.verify,
-              onTap: () {},
+              onTap: () =>GoRouter.of(context).push(setPasswordPass),
             ),
           ),
           const AspectRatio(aspectRatio: AppConsts.aspect16on2),
