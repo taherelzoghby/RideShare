@@ -2,11 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/style.dart';
 import 'package:ride_share/core/widgets/customButton.dart';
-import 'package:ride_share/features/auth/presentation/widgets/custom_textfield_password.dart';
 
 import '../../../../core/constants/strings.dart';
-import '../../../../core/widgets/text_form_field.dart';
 import 'head_phone_verification_widget.dart';
+import 'section_set_password_fields.dart';
 
 class SetPassBody extends StatelessWidget {
   const SetPassBody({super.key});
@@ -25,13 +24,7 @@ class SetPassBody extends StatelessWidget {
             ),
           ),
           const AspectRatio(aspectRatio: AppConsts.aspect16on5),
-          CustomTextFieldPassword(
-            hint: StringsEn.enterYourPassword,
-          ),
-          const AspectRatio(aspectRatio: AppConsts.aspect16on1),
-          CustomTextFieldPassword(
-            hint: StringsEn.confirmPassword,
-          ),
+          const SectionFieldsSetPassword(),
           const AspectRatio(aspectRatio: AppConsts.aspect16on13),
           AspectRatio(
             aspectRatio: AppConsts.aspectRatioButtonAuth,
