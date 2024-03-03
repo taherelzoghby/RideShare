@@ -22,18 +22,21 @@ class CustomButtonWithWidget extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: AppConsts.borderButton,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            HandleImageWidget(image: icon),
-            SizedBox(width: size.width * .01),
-            Text(
-              label,
-              style: AppConsts.style14.copyWith(
-                color: AppConsts.neutral900,
+        child: Padding(
+          padding:AppConsts.allPadding15,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              HandleImageWidget(image: icon),
+              SizedBox(width: size.width * .01),
+              Text(
+                label,
+                style: AppConsts.style14.copyWith(
+                  color: AppConsts.neutral900,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
