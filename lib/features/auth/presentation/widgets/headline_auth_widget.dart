@@ -1,11 +1,15 @@
-
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/style.dart';
 
-class HeadLineAuth extends StatelessWidget {
-  const HeadLineAuth({super.key, required this.headline});
+class HeadLineAuthSignUp extends StatelessWidget {
+  const HeadLineAuthSignUp({
+    super.key,
+    required this.headline,
+    this.isCenter = false,
+  });
 
   final String headline;
+  final bool isCenter;
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +19,7 @@ class HeadLineAuth extends StatelessWidget {
       child: Text(
         headline,
         style: AppConsts.style24.copyWith(color: AppConsts.neutral600),
+        textAlign: isCenter ? TextAlign.center : null,
       ),
     );
   }

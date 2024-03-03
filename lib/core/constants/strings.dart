@@ -84,7 +84,7 @@ abstract class StringsEn {
   static const String eg = 'EG';
   static const String google = 'Google';
   static const String facebook = 'Facebook';
-
+  static const String validator = 'Enter Correct Code';
   //home
   static const String rental = 'Rental';
   static const String whereWouldYouGo = 'Where would you go?';

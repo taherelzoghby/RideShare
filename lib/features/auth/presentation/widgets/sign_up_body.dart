@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:ride_share/core/constants/routesPage.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
 import 'package:ride_share/features/auth/presentation/widgets/section_fields_sign_up.dart';
@@ -22,7 +23,7 @@ class SignUpBody extends StatelessWidget {
           const AspectRatio(aspectRatio: AppConsts.aspect16on2),
           const Align(
             alignment: Alignment.centerLeft,
-            child: HeadLineAuth(
+            child: HeadLineAuthSignUp(
               headline: StringsEn.signUpWithYourEmailOrPhoneNumber,
             ),
           ),
@@ -35,12 +36,15 @@ class SignUpBody extends StatelessWidget {
             aspectRatio: AppConsts.aspectRatioButtonAuth,
             child: CustomButton(
               text: StringsEn.signUp,
-              onTap: () => GoRouter.of(context).push(''),
+              onTap: () => GoRouter.of(context).push(phoneVerificationPath),
             ),
           ),
           const OrWidget(),
           const SignWithGoogleAndFaceBookWidget(),
-          const AlternativeAuth(),
+          const AlternativeAuth(
+            label: StringsEn.alreadyHaveAnAccount,
+            trailing: StringsEn.signIn,
+          ),
         ],
       ),
     );

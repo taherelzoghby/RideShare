@@ -65,6 +65,7 @@ abstract class AppConsts {
   static const double aspect16on1 = 16 / 1;
   static const double aspect20on36 = 20 / 36;
   static const double aspect20on2 = 20 / 2;
+  static const double aspect20on3 = 20 / 3;
   static const double aspect16on4 = 16 / 4;
   static const double aspect16on5 = 16 / 5;
   static const double aspect16on3 = 16 / 3;
