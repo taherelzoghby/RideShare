@@ -16,7 +16,7 @@ class PhoneVerificationBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: AppConsts.mainPadding,
-      child: ListView(
+      child: Column(
         children: [
           const AspectRatio(aspectRatio: AppConsts.aspect16on2),
           const Center(
@@ -31,12 +31,12 @@ class PhoneVerificationBody extends StatelessWidget {
             label: StringsEn.didntReceiveCode,
             trailing: StringsEn.resendAgain,
           ),
-          const AspectRatio(aspectRatio: AppConsts.aspect16on13),
+          const Spacer(),
           AspectRatio(
             aspectRatio: AppConsts.aspectRatioButtonAuth,
             child: CustomButton(
               text: StringsEn.verify,
-              onTap: () =>GoRouter.of(context).push(setPasswordPass),
+              onTap: () => GoRouter.of(context).push(setPasswordPass),
             ),
           ),
           const AspectRatio(aspectRatio: AppConsts.aspect16on2),

@@ -16,7 +16,7 @@ class SetPassBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: AppConsts.mainPadding,
-      child: ListView(
+      child: Column(
         children: [
           const AspectRatio(aspectRatio: AppConsts.aspect16on2),
           const Center(
@@ -27,7 +27,7 @@ class SetPassBody extends StatelessWidget {
           ),
           const AspectRatio(aspectRatio: AppConsts.aspect16on5),
           const SectionFieldsSetPassword(),
-          const AspectRatio(aspectRatio: AppConsts.aspect16on13),
+          const Spacer(),
           AspectRatio(
             aspectRatio: AppConsts.aspectRatioButtonAuth,
             child: CustomButton(

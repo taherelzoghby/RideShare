@@ -250,6 +250,7 @@ This Privacy Policy applies only to our online activities and is valid for visit
   static const String contactUsForRideShare = 'Contact us for Ride share';
   static const String address = 'Address';
   static const String sendMessage = 'Send Message';
+  static const String sendOtp = 'Send Otp';
   static const String deleteAccountInfo = """
   Are you sure you want to delete your account? Please read how account deletion will affect.
 Deleting your account removes personal information our database. Tour email becomes permanently reserved and same email cannot be re-use to register a new account.

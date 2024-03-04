@@ -27,7 +27,7 @@ class ButtonsWelcomeScreen extends StatelessWidget {
             aspectRatio: AppConsts.aspectRatioButtonAuth,
             child: CustomButton(
               text: StringsEn.logIn,
-              onTap: () =>GoRouter.of(context).push(loginPath),
+              onTap: () =>GoRouter.of(context).push(signInPath),
               background: AppConsts.white,
               isBorder: true,
               styleText: AppConsts.style16.copyWith(

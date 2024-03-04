@@ -31,7 +31,7 @@ class ProfileView extends StatelessWidget {
           ),
         ),
       ),
-      body: SafeArea(
+      body: const SafeArea(
         child: ProfileBody(),
       ),
     );
