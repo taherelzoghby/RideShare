@@ -41,9 +41,10 @@ class SignUpBody extends StatelessWidget {
           ),
           const OrWidget(),
           const SignWithGoogleAndFaceBookWidget(),
-          const AlternativeAuth(
+          AlternativeAuth(
             label: StringsEn.alreadyHaveAnAccount,
             trailing: StringsEn.signIn,
+            trailOnTap: () => GoRouter.of(context).push(signInPath),
           ),
         ],
       ),

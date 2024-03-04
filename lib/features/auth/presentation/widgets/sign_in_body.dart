@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:ride_share/core/constants/routesPage.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
 import 'package:ride_share/core/widgets/customButton.dart';
@@ -26,21 +27,22 @@ class SignInBody extends StatelessWidget {
               headline: StringsEn.signInWithEmailOrPhoneNumber,
             ),
           ),
-          const AspectRatio(aspectRatio: AppConsts.aspect16on2),
+          const AspectRatio(aspectRatio: AppConsts.aspect16on1),
           const SectionFieldsSignIn(),
           const Spacer(),
           AspectRatio(
             aspectRatio: AppConsts.aspectRatioButtonAuth,
             child: CustomButton(
               text: StringsEn.signIn,
-              onTap: () => GoRouter.of(context).push(''),
+              onTap: ()=>GoRouter.of(context).go(navPath),
             ),
           ),
           const OrWidget(),
           const SignWithGoogleAndFaceBookWidget(),
-          const AlternativeAuth(
+          AlternativeAuth(
             label: StringsEn.dontHaveAnAccount,
             trailing: StringsEn.signUp,
+            trailOnTap: () => GoRouter.of(context).push(signUpPath),
           ),
         ],
       ),

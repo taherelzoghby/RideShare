@@ -164,6 +164,13 @@ abstract class AppConsts {
     borderRadius: BorderRadius.circular(8),
     borderSide: const BorderSide(color: mainColor, width: 1),
   );
+  static OutlineInputBorder circleFloatButtonBorder = OutlineInputBorder(
+    borderRadius: radius100,
+    borderSide: const BorderSide(
+      width: 1,
+      color: mainColor,
+    ),
+  );
   static BoxDecoration decorationLoadingMap = BoxDecoration(
     borderRadius: AppConsts.radius15,
     color: neutral200.withOpacity(.2),

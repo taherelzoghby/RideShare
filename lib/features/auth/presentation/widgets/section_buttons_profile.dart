@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:go_router/go_router.dart';
+import 'package:ride_share/core/constants/routesPage.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
 import 'package:ride_share/core/widgets/customButton.dart';
+import 'package:ride_share/features/home/presentation/pages/home_view.dart';
 
 class SectionButtonsProfile extends StatelessWidget {
   const SectionButtonsProfile({super.key});
@@ -26,7 +29,7 @@ class SectionButtonsProfile extends StatelessWidget {
           Expanded(
             child: CustomButton(
               text: StringsEn.save,
-              onTap: () {},
+              onTap: ()=>GoRouter.of(context).go(navPath),
             ),
           ),
         ],
