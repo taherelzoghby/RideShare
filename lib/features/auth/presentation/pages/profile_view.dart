@@ -4,8 +4,8 @@ import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
 import 'package:ride_share/features/auth/presentation/widgets/profile_body.dart';
 
-class ProfileView extends StatelessWidget {
-  const ProfileView({super.key});
+class ProfileAuthView extends StatelessWidget {
+  const ProfileAuthView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class ProfileView extends StatelessWidget {
         ),
       ),
       body: const SafeArea(
-        child: ProfileBody(),
+        child: ProfileAuthBody(),
       ),
     );
   }

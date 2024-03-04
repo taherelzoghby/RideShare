@@ -5,7 +5,6 @@ import 'package:ride_share/core/constants/routesPage.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
 import 'package:ride_share/core/widgets/customButton.dart';
-import 'package:ride_share/features/home/presentation/pages/home_view.dart';
 
 class SectionButtonsProfile extends StatelessWidget {
   const SectionButtonsProfile({super.key});

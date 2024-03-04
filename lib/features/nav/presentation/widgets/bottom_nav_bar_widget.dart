@@ -9,12 +9,12 @@ class BottomNavBarWidget extends StatelessWidget {
     required this.label,
      this.icon,
     required this.color,
-    required this.onTap,
+     this.onTap,
   });
   final String label;
   final IconData? icon;
   final Color color;
-  final void Function() onTap;
+  final void Function()? onTap;
   @override
   Widget build(BuildContext context) {
     return InkWell(

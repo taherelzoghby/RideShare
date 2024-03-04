@@ -9,10 +9,10 @@ import 'package:ride_share/features/auth/presentation/pages/set_pass_view.dart';
 import 'package:ride_share/features/auth/presentation/pages/sign_in_view.dart';
 import 'package:ride_share/features/auth/presentation/pages/sign_up_view.dart';
 import 'package:ride_share/features/auth/presentation/pages/welcome_view.dart';
-import 'package:ride_share/features/home/presentation/manager/nav_bar_cubit.dart';
-import 'package:ride_share/features/home/presentation/pages/home_view.dart';
+import 'package:ride_share/features/nav/presentation/manager/nav_bar_cubit.dart';
 
 import '../../features/boarding/presentation/pages/board_view.dart';
+import '../../features/nav/presentation/pages/nav_view.dart';
 
 const boardPath = '/';
 const welcomePath = '/welcome';
@@ -70,7 +70,7 @@ final router = GoRouter(
       pageBuilder: (context, state) => buildPageWithDefaultTransition(
         context: context,
         state: state,
-        child: const ProfileView(),
+        child: const ProfileAuthView(),
       ),
     ),
     GoRoute(

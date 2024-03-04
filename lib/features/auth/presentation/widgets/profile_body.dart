@@ -6,8 +6,8 @@ import 'edit_photo.dart';
 import 'section_buttons_profile.dart';
 import 'section_fields_profile.dart';
 
-class ProfileBody extends StatelessWidget {
-  const ProfileBody({super.key});
+class ProfileAuthBody extends StatelessWidget {
+  const ProfileAuthBody({super.key});
 
   @override
   Widget build(BuildContext context) {
