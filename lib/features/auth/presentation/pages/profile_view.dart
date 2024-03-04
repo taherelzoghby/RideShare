@@ -2,16 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
-import 'package:ride_share/features/auth/presentation/widgets/phone_verification_body.dart';
+import 'package:ride_share/features/auth/presentation/widgets/profile_body.dart';
 
-class PhoneVerificationView extends StatelessWidget {
-  const PhoneVerificationView({super.key});
+class ProfileView extends StatelessWidget {
+  const ProfileView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         leadingWidth: MediaQuery.sizeOf(context).width * .25,
+        title: Text(
+          StringsEn.profile,
+          style: AppConsts.style16.copyWith(
+            color: AppConsts.neutral700,
+          ),
+        ),
+        centerTitle: true,
         leading: TextButton.icon(
           onPressed: () => GoRouter.of(context).pop(),
           icon: const Icon(
@@ -24,8 +31,8 @@ class PhoneVerificationView extends StatelessWidget {
           ),
         ),
       ),
-      body: const SafeArea(
-        child: PhoneVerificationBody(),
+      body: SafeArea(
+        child: ProfileBody(),
       ),
     );
   }

@@ -13,7 +13,6 @@ class SignUpView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leadingWidth: MediaQuery.sizeOf(context).width * .25,
-        foregroundColor: AppConsts.neutral300,
         leading: TextButton.icon(
           onPressed: () => GoRouter.of(context).pop(),
           icon: const Icon(
