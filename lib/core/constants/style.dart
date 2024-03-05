@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 abstract class AppConsts {
   static const Color mainColor = Color.fromRGBO(8, 183, 131, 1);
+  static const Color mainColor2 = Color.fromRGBO(0, 137, 85, 1);
   static const Color white = Colors.white;
   static const Color neutral900 = Color.fromRGBO(17, 24, 39, 1);
   static const Color neutral800 = Color.fromRGBO(31, 41, 55, 1);
@@ -78,6 +79,7 @@ abstract class AppConsts {
   static const double aspect13on9 = 13 / 9;
   static const double aspect13on10 = 13 / 10;
   static const double aspect13on5 = 13 / 5;
+  static const double aspect13on7 = 13 / 7;
   static const double aspect10on19 = 10 / 19;
   static const double aspect16on7 = 16 / 7;
   static const double aspect2point5on3 = 2.5 / 3;
@@ -155,11 +157,7 @@ abstract class AppConsts {
     fontSize: 32,
     fontWeight: FontWeight.w500,
   );
-  static const TextStyle style16Error = TextStyle(
-    color: AppConsts.danger500,
-    fontSize: 16,
-    fontWeight: FontWeight.w500,
-  );
+
   static OutlineInputBorder normalBorderField = OutlineInputBorder(
     borderRadius: BorderRadius.circular(8),
     borderSide: const BorderSide(color: mainColor, width: 1),
@@ -171,14 +169,7 @@ abstract class AppConsts {
       color: mainColor,
     ),
   );
-  static BoxDecoration decorationLoadingMap = BoxDecoration(
-    borderRadius: AppConsts.radius15,
-    color: neutral200.withOpacity(.2),
-  );
-  static OutlineInputBorder focusedBorderField = OutlineInputBorder(
-    borderRadius: BorderRadius.circular(13),
-    borderSide: const BorderSide(color: primary500, width: 1),
-  );
+
   static OutlineInputBorder errorBorderField = OutlineInputBorder(
     borderRadius: BorderRadius.circular(13),
     borderSide: const BorderSide(color: danger500, width: 1),
@@ -187,60 +178,25 @@ abstract class AppConsts {
     border: Border.all(color: AppConsts.neutral300),
     borderRadius: BorderRadius.circular(12),
   );
-  static BoxDecoration decorationSheet = const BoxDecoration(
-    color: AppConsts.neutral100,
-    borderRadius: BorderRadius.only(
-      topLeft: Radius.circular(30),
-      topRight: Radius.circular(30),
-    ),
-  );
-  static BoxDecoration decorationCircleNotCheck = BoxDecoration(
-    color: AppConsts.neutral100.withOpacity(0),
-    borderRadius: BorderRadius.circular(50),
-    border: Border.all(color: AppConsts.neutral400),
-  );
-  static BoxDecoration decorationCircleDone = BoxDecoration(
-    color: AppConsts.primary500,
-    borderRadius: BorderRadius.circular(50),
-  );
-  static BoxDecoration decorationRadius8 = BoxDecoration(
-    borderRadius: BorderRadius.circular(8),
-    border: Border.all(color: AppConsts.neutral300),
-  );
-  static BoxDecoration decorationChatBubble = const BoxDecoration(
-    color: AppConsts.neutral200,
-    borderRadius: BorderRadius.only(
-      bottomRight: Radius.circular(8),
-      bottomLeft: Radius.circular(8),
-      topRight: Radius.circular(8),
-    ),
-  );
-  static BoxDecoration decorationChatBubbleForFriend = const BoxDecoration(
-    color: AppConsts.primary500,
-    borderRadius: BorderRadius.only(
-      bottomLeft: Radius.circular(8),
-      topLeft: Radius.circular(8),
-      bottomRight: Radius.circular(8),
-    ),
-  );
-  static BoxDecoration decorationPhoto = BoxDecoration(
-    border: Border.all(width: 4, color: AppConsts.neutral100),
-    borderRadius: BorderRadius.circular(90),
-  );
-  static BoxDecoration decorationBlur = BoxDecoration(
-    borderRadius: BorderRadius.circular(90),
-    color: AppConsts.neutral700.withOpacity(.5),
-  );
-  static BoxDecoration barDecoration = BoxDecoration(
-    color: AppConsts.neutral200,
-    borderRadius: BorderRadius.circular(40),
-  );
-  static BoxDecoration decorationNeutral300border16 = BoxDecoration(
-    color: AppConsts.neutral300,
-    borderRadius: BorderRadius.circular(16),
-  );
+
   static BoxDecoration decorationNeutral400border16 = BoxDecoration(
     color: AppConsts.neutral400,
     borderRadius: BorderRadius.circular(16),
+  );
+  static BoxDecoration decorationRentalWidgetHome = BoxDecoration(
+    color: AppConsts.mainColor.withOpacity(.5),
+    borderRadius: AppConsts.radius8,
+    border: Border.all(color: AppConsts.mainColor2),
+    boxShadow: [
+      BoxShadow(
+        color: AppConsts.mainColor.withOpacity(.5),
+        spreadRadius: .8,
+        blurRadius: .8,
+      ),
+    ],
+  );
+  static BoxDecoration decorationBarRadius15white = BoxDecoration(
+    color: AppConsts.neutral100.withOpacity(.5),
+    borderRadius: AppConsts.radius15,
   );
 }
