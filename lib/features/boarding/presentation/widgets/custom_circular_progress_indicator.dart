@@ -15,6 +15,9 @@ class CustomCircularPercentIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircularPercentIndicator(
+      animation: true,
+      animationDuration:700,
+      animateFromLastPercent: true,
       radius: 60.0,
       lineWidth: 7.0,
       percent: (currentPage + 1) / 3,
