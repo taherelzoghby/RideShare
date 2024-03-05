@@ -1,13 +1,22 @@
-
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
 import 'package:ride_share/core/widgets/text_field.dart';
 
-class FieldsBottomSheetHome extends StatelessWidget {
-  const FieldsBottomSheetHome({
-    super.key,
-  });
+class FieldsBottomSheetHome extends StatefulWidget {
+  const FieldsBottomSheetHome({super.key});
+
+  @override
+  State<FieldsBottomSheetHome> createState() => _FieldsBottomSheetHomeState();
+}
+
+class _FieldsBottomSheetHomeState extends State<FieldsBottomSheetHome> {
+  FocusNode firstTextFieldFocusNode = FocusNode();
+  FocusNode secondTextFieldFocusNode = FocusNode();
+
+  void _moveToNextField(BuildContext context) {
+    FocusScope.of(context).requestFocus(secondTextFieldFocusNode);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -20,11 +29,16 @@ class FieldsBottomSheetHome extends StatelessWidget {
             onPressed: () {},
             icon: const Icon(Icons.my_location),
           ),
+          focusNode: firstTextFieldFocusNode,
+          onEditingComplete: () {
+            _moveToNextField(context);
+          },
         ),
         const AspectRatio(aspectRatio: AppConsts.aspect40on1),
-        const CustomTextField(
+        CustomTextField(
           hint: StringsEn.to,
-          perfixIcon: Icon(Icons.location_on),
+          focusNode: secondTextFieldFocusNode,
+          perfixIcon: const Icon(Icons.location_on),
         ),
       ],
     );

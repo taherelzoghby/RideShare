@@ -17,6 +17,8 @@ class CustomTextField extends StatelessWidget {
     this.controller,
     this.suffixIcon,
     this.border,
+    this.focusNode,
+    this.onEditingComplete,
   }) : super(key: key);
   final String hint;
   final void Function(String)? onChanged;
@@ -29,6 +31,8 @@ class CustomTextField extends StatelessWidget {
   final void Function()? onTap;
   final TextEditingController? controller;
   final OutlineInputBorder? border;
+  final FocusNode? focusNode;
+  final void Function()? onEditingComplete;
 
   @override
   Widget build(BuildContext context) {
@@ -39,6 +43,8 @@ class CustomTextField extends StatelessWidget {
       readOnly: readOnly,
       obscureText: obscureText,
       onChanged: onChanged,
+      focusNode: focusNode,
+      onEditingComplete: onEditingComplete,
       decoration: InputDecoration(
         filled: true,
         fillColor: AppConsts.neutral100.withOpacity(.5),
