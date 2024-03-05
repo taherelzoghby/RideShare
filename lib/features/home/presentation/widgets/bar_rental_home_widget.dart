@@ -9,7 +9,7 @@ class BarRentalHomeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BarComponent(
+    return const BarComponent(
       title: StringsEn.transport,
       color: AppConsts.mainColor2,
     );

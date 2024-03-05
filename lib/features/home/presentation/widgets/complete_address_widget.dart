@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'from_to_location_widget.dart';
 import 'location_dotted_widget.dart';
 

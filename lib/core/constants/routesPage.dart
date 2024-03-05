@@ -10,6 +10,7 @@ import 'package:ride_share/features/auth/presentation/pages/sign_in_view.dart';
 import 'package:ride_share/features/auth/presentation/pages/sign_up_view.dart';
 import 'package:ride_share/features/auth/presentation/pages/welcome_view.dart';
 import 'package:ride_share/features/nav/presentation/manager/nav_bar_cubit.dart';
+import 'package:ride_share/features/transport/pages/select_transport_view.dart';
 
 import '../../features/boarding/presentation/pages/board_view.dart';
 import '../../features/nav/presentation/pages/nav_view.dart';
@@ -23,6 +24,7 @@ const profilePath = '/profile';
 const signInPath = '/signIn';
 const phoneAndEmailVerificationPath = '/phoneAndEmailVerification';
 const navPath = '/navPath';
+const selectTransportPath = '/selectTransport';
 final router = GoRouter(
   routes: [
     GoRoute(
@@ -87,6 +89,14 @@ final router = GoRouter(
         context: context,
         state: state,
         child: const PhoneAndEmailVerificationView(),
+      ),
+    ),
+    GoRoute(
+      path: selectTransportPath,
+      pageBuilder: (context, state) => buildPageWithDefaultTransition(
+        context: context,
+        state: state,
+        child: const SelectTransportView(),
       ),
     ),
     GoRoute(

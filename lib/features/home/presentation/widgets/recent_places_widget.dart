@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
-import 'package:ride_share/features/home/presentation/widgets/recent_places_list_view.dart';
+
+import 'recent_places_list_view.dart';
 
 class RecentPlacesWidget extends StatelessWidget {
   const RecentPlacesWidget({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/constants/style.dart';
+import '../../../../../core/constants/style.dart';
 
 class BarComponent extends StatelessWidget {
   const BarComponent({
