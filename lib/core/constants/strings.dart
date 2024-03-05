@@ -105,7 +105,7 @@ abstract class StringsEn {
 
   //Location
   static const String selectAddress = 'Select address';
-  static const String from = 'Form';
+  static const String from = 'From';
   static const String to = 'To';
   static const String recentPlaces = 'Recent places';
   static const String office = 'Office';

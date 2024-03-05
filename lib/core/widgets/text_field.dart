@@ -47,18 +47,16 @@ class CustomTextField extends StatelessWidget {
         prefixIcon: perfixIcon,
         prefixText: perfixText,
         suffixIcon: suffixIcon,
+        focusedBorder: border ?? AppConsts.normalBorderField,
         enabledBorder: border ??
             AppConsts.normalBorderField.copyWith(
-              borderRadius: BorderRadius.circular(8),
+              borderSide: const BorderSide(
+                color: AppConsts.neutral300,
+                width: 1,
+              ),
             ),
-        focusedBorder: border ??
-            AppConsts.normalBorderField.copyWith(
-              borderRadius: BorderRadius.circular(8),
-            ),
-        focusedErrorBorder: border ??
-            AppConsts.normalBorderField.copyWith(
-              borderRadius: BorderRadius.circular(8),
-            ),
+        focusedErrorBorder: AppConsts.errorBorderField,
+        errorBorder: AppConsts.errorBorderField,
       ),
     );
   }

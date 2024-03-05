@@ -199,4 +199,10 @@ abstract class AppConsts {
     color: AppConsts.neutral100.withOpacity(.5),
     borderRadius: AppConsts.radius15,
   );
+  static RoundedRectangleBorder radiusSheet = const RoundedRectangleBorder(
+    borderRadius: BorderRadius.only(
+      topLeft: Radius.circular(15),
+      topRight: Radius.circular(15),
+    ),
+  );
 }

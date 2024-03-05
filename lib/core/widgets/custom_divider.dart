@@ -6,11 +6,11 @@ class CustomDivider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: AspectRatio(
-        aspectRatio: AppConsts.aspect300on1,
-        child: Container(color: AppConsts.neutral300),
+    return Container(
+      height: MediaQuery.sizeOf(context).height * .005,
+      decoration: BoxDecoration(
+        borderRadius: AppConsts.radius15,
+        color: AppConsts.neutral300,
       ),
     );
   }
