@@ -148,6 +148,7 @@ abstract class StringsEn {
   static const String time = 'Time';
   static const String selectPaymentMethod = 'Select payment method';
   static const String confirmBooking = 'Confirm Booking';
+  static const String confirm = 'Confirm';
   static const String charge = 'Charge';
   static const String mustang = 'Mustang';
   static const String perHours = 'per hours';

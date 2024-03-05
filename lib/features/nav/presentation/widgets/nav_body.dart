@@ -14,7 +14,7 @@ class NavBarBody extends StatelessWidget {
     NavBarCubit blocNav = BlocProvider.of<NavBarCubit>(context);
     return BottomAppBar(
       color: AppConsts.white,
-      height: MediaQuery.sizeOf(context).height * .095,
+      height: MediaQuery.sizeOf(context).height * .1,
       elevation: 7,
       surfaceTintColor: AppConsts.white,
       shadowColor: AppConsts.mainColor,
@@ -46,7 +46,7 @@ class NavBarBody extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 8),
-              Expanded(
+              const Expanded(
                 child: BottomNavBarWidget(
                   color: AppConsts.mainColor,
                   label: StringsEn.wallet,

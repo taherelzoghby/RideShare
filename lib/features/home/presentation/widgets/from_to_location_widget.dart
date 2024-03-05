@@ -1,18 +1,28 @@
+
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
 
-class RecentPlacesListView extends StatelessWidget {
-  const RecentPlacesListView({super.key});
+class FromToLocation extends StatelessWidget {
+  const FromToLocation({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: 10,
-      itemBuilder: (context, index) {
-        return ListTile(
-          leading: const Icon(Icons.location_pin),
+    return Column(
+      children: [
+        ListTile(
+          title: const Text(
+            StringsEn.office,
+            style: AppConsts.style16,
+          ),
+          subtitle: Text(
+            '2972 Westheimer Rd. Santa Ana, Illinois 85486 ',
+            style: AppConsts.style12.copyWith(
+              color: AppConsts.neutral400,
+            ),
+          ),
+        ),
+        ListTile(
           title: const Text(
             StringsEn.office,
             style: AppConsts.style16,
@@ -29,8 +39,8 @@ class RecentPlacesListView extends StatelessWidget {
               color: AppConsts.neutral700,
             ),
           ),
-        );
-      },
+        ),
+      ],
     );
   }
 }

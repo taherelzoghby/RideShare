@@ -1,19 +1,31 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
+import 'package:ride_share/core/widgets/customButton.dart';
 import 'package:ride_share/core/widgets/custom_divider.dart';
-import 'package:ride_share/features/home/presentation/widgets/fields_bottom_sheet_home.dart';
-import 'recent_places_widget.dart';
+import 'complete_address_widget.dart';
+import 'get_location_from_user_widget.dart';
 import 'top_bottom_sheet_widget.dart';
 
-class BottomSheetHomeSelectAddress extends StatelessWidget {
+class BottomSheetHomeSelectAddress extends StatefulWidget {
   const BottomSheetHomeSelectAddress({super.key});
+
+  @override
+  State<BottomSheetHomeSelectAddress> createState() =>
+      _BottomSheetHomeSelectAddressState();
+}
+
+class _BottomSheetHomeSelectAddressState
+    extends State<BottomSheetHomeSelectAddress> {
+  int current = 0;
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.sizeOf(context);
-    return SizedBox(
-      height: size.height * .65,
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 650),
+      height: size.height * .7,
       width: size.width,
       child: Padding(
         padding: AppConsts.mainPadding,
@@ -26,16 +38,28 @@ class BottomSheetHomeSelectAddress extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            const AspectRatio(aspectRatio: AppConsts.aspect16on1),
-            const FieldsBottomSheetHome(),
             const AspectRatio(aspectRatio: AppConsts.aspect40on1),
             const Row(
               children: [
-                Expanded(child: CustomDivider()),
+                Expanded(child: CustomDivider(height: 1)),
               ],
             ),
+            current == 0
+                ? const GetLocationFromUserWidget()
+                : const CompleteAddressWidget(),
             const AspectRatio(aspectRatio: AppConsts.aspect40on1),
-            const RecentPlacesWidget(),
+            AspectRatio(
+              aspectRatio: AppConsts.aspectRatioButtonAuth,
+              child: CustomButton(
+                text: current == 0
+                    ? StringsEn.confirm
+                    : StringsEn.confirmLocation,
+                onTap: () {
+                  current == 0 ? setState(() => current = 1) : () {};
+                },
+              ),
+            ),
+            const AspectRatio(aspectRatio: AppConsts.aspect40on1),
           ],
         ),
       ),

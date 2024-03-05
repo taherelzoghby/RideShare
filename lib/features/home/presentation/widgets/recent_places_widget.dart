@@ -8,19 +8,20 @@ class RecentPlacesWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          StringsEn.recentPlaces,
-          style: AppConsts.style16,
-        ),
-        AspectRatio(aspectRatio: AppConsts.aspect40on1),
-        AspectRatio(
-          aspectRatio: AppConsts.aspect13on9,
-          child: RecentPlacesListView(),
-        ),
-      ],
+    return const Expanded(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            StringsEn.recentPlaces,
+            style: AppConsts.style16,
+          ),
+          AspectRatio(aspectRatio: AppConsts.aspect40on1),
+          Expanded(
+            child: RecentPlacesListView(),
+          ),
+        ],
+      ),
     );
   }
 }
