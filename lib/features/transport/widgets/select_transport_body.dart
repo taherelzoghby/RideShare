@@ -1,4 +1,6 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:ride_share/core/constants/strings.dart';
+import 'package:ride_share/core/constants/style.dart';
 
 class SelectTransportBody extends StatelessWidget {
   const SelectTransportBody({super.key});
@@ -6,7 +8,19 @@ class SelectTransportBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [],
+      children: [
+        const AspectRatio(aspectRatio: AppConsts.aspect16on1),
+        Text(
+          StringsEn.selectYourTransport,
+          style: AppConsts.style20.copyWith(
+            color: AppConsts.neutral800,
+          ),
+        ),
+        const AspectRatio(aspectRatio: AppConsts.aspect16on1),
+        Wrap(
+          children: [],
+        ),
+      ],
     );
   }
 }
