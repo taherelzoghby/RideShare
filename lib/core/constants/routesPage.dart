@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ride_share/core/helper/custom_animation.dart';
@@ -10,10 +10,12 @@ import 'package:ride_share/features/auth/presentation/pages/sign_in_view.dart';
 import 'package:ride_share/features/auth/presentation/pages/sign_up_view.dart';
 import 'package:ride_share/features/auth/presentation/pages/welcome_view.dart';
 import 'package:ride_share/features/nav/presentation/manager/nav_bar_cubit.dart';
+import 'package:ride_share/features/transport/pages/available_vechile_for_rides_view.dart';
 import 'package:ride_share/features/transport/pages/select_transport_view.dart';
 
 import '../../features/boarding/presentation/pages/board_view.dart';
 import '../../features/nav/presentation/pages/nav_view.dart';
+import '../service_locator.dart';
 
 const boardPath = '/';
 const welcomePath = '/welcome';
@@ -25,6 +27,7 @@ const signInPath = '/signIn';
 const phoneAndEmailVerificationPath = '/phoneAndEmailVerification';
 const navPath = '/navPath';
 const selectTransportPath = '/selectTransport';
+const avaiableVechileForRidePath = '/availableVechilePath';
 final router = GoRouter(
   routes: [
     GoRoute(
@@ -109,6 +112,19 @@ final router = GoRouter(
           child: const NavBarView(),
         ),
       ),
+    ),
+    GoRoute(
+      path: avaiableVechileForRidePath,
+      pageBuilder: (context, state) {
+        String vech = state.extra as String;
+        return buildPageWithDefaultTransition(
+          context: context,
+          state: state,
+          child: AvailableVechileForRideView(
+            vech: vech,
+          ),
+        );
+      },
     ),
   ],
 );

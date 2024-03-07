@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
+import 'section_transports.dart';
 
 class SelectTransportBody extends StatelessWidget {
   const SelectTransportBody({super.key});
@@ -17,9 +18,7 @@ class SelectTransportBody extends StatelessWidget {
           ),
         ),
         const AspectRatio(aspectRatio: AppConsts.aspect16on1),
-        Wrap(
-          children: [],
-        ),
+        const SectionTransports(),
       ],
     );
   }

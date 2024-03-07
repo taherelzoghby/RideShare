@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
 import 'package:ride_share/features/favourite/presentation/pages/favourite_view.dart';
+import 'package:ride_share/features/home/data/models/transport_model.dart';
 import 'package:ride_share/features/home/presentation/pages/home_view.dart';
 import 'package:ride_share/features/offer/presentation/pages/offer_view.dart';
 import 'package:ride_share/features/profile/pages/profile_view.dart';
 
+import 'assets.dart';
 import 'enum.dart';
 
 List<Gender> genders = <Gender>[
@@ -38,4 +40,18 @@ List<Widget> screens = const [
   FavView(),
   OfferView(),
   ProfileView(),
+];
+List<TransportModel> transports = const [
+  TransportModel(
+    name: StringsEn.car,
+    image: Assets.imagesCar,
+  ),
+  TransportModel(
+    name: StringsEn.taxi,
+    image: Assets.imagesTaxi,
+  ),
+  TransportModel(
+    name: StringsEn.bike,
+    image: Assets.imagesBike,
+  ),
 ];
