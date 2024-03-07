@@ -15,7 +15,7 @@ class Assets {
 
   /// Assets for imagesBike
   /// assets/images/Bike.svg
-  static const String imagesBike = "assets/images/Bike.svg";
+  static const String imagesBike = "assets/images/Bike.png";
 
   /// Assets for imagesBoard1
   /// assets/images/board1.svg
@@ -31,7 +31,7 @@ class Assets {
 
   /// Assets for imagesCar
   /// assets/images/Car.svg
-  static const String imagesCar = "assets/images/Car.svg";
+  static const String imagesCar = "assets/images/Car.png";
 
   /// Assets for imagesCar1
   /// assets/images/car1.svg
@@ -65,9 +65,6 @@ class Assets {
   /// assets/images/car4.png
   static const String imagesCar4Png = "assets/images/car4.png";
 
-  /// Assets for imagesCycle
-  /// assets/images/Cycle.svg
-  static const String imagesCycle = "assets/images/Cycle.svg";
 
   /// Assets for imagesDone
   /// assets/images/done.svg
@@ -79,7 +76,7 @@ class Assets {
 
   /// Assets for imagesTaxi
   /// assets/images/Taxi.svg
-  static const String imagesTaxi = "assets/images/Taxi.svg";
+  static const String imagesTaxi = "assets/images/Taxi.png";
 
   /// Assets for imagesUs
   /// assets/images/us.svg
