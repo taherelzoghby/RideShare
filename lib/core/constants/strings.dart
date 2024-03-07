@@ -122,9 +122,11 @@ abstract class StringsEn {
   static const String bike = 'Bike';
   static const String cycle = 'Cycle';
   static const String taxi = 'Taxi';
-  static const String availableCarsForRide = 'Avaiable cars for ride';
-  static const String carFound = 'cars found';
-  static const String viewCarList = 'View car list';
+  static const String available = 'Avaiable';
+  static const String forRide='for ride';
+  static const String found = 'found';
+  static const String view = 'View';
+  static const String list = 'List';
   static const String bookLater = 'Book later';
   static const String rideNow = 'Ride Now';
   static const String reviews = 'reviews';
