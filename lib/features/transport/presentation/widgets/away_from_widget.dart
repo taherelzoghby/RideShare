@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/functions.dart';
+import '../../../../core/functions.dart';
 
 class AwayFromWidget extends StatelessWidget {
   const AwayFromWidget({

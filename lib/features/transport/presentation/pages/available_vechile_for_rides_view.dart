@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
-import 'package:ride_share/features/transport/widgets/available_vechile_for_rides_body.dart';
+import 'package:ride_share/features/transport/presentation/widgets/available_vechile_for_rides_body.dart';
 
 class AvailableVechileForRideView extends StatelessWidget {
   const AvailableVechileForRideView({

@@ -3,12 +3,18 @@ import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
 import 'package:ride_share/core/widgets/customButton.dart';
 
+import '../../domain/entities/vechile_intity.dart';
 import 'info_item_vechile.dart';
 
 class ItemVechile extends StatelessWidget {
-  const ItemVechile({super.key, required this.vech});
+  const ItemVechile({
+    super.key,
+    required this.vech,
+    required this.vehicleEntity,
+  });
 
   final String vech;
+  final VehicleEntity vehicleEntity;
 
   @override
   Widget build(BuildContext context) {

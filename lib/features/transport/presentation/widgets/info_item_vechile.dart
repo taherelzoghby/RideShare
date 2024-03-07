@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ride_share/core/constants/assets.dart';
 
-import '../../../core/constants/style.dart';
-import '../../../core/helper/handle_image.dart';
+import '../../../../core/constants/style.dart';
+import '../../../../core/helper/handle_image.dart';
 import 'away_from_widget.dart';
 
 class InfoItemVechile extends StatelessWidget {
