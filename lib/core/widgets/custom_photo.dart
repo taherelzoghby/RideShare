@@ -1,17 +1,21 @@
-// import 'package:flutter/material.dart';
 
-// import '../helper/handle_image.dart';
+import 'package:flutter/material.dart';
+import 'package:ride_share/core/constants/style.dart';
+import 'package:ride_share/core/helper/handle_image.dart';
 
-// class CustomPhoto extends StatelessWidget {
-//   const CustomPhoto({super.key, this.image});
+class CustomPhoto extends StatelessWidget {
+  const CustomPhoto({super.key, required this.image});
 
-//   final String? image;
+  final String image;
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return ClipRRect(
-//       borderRadius: BorderRadius.circular(15),
-//       child: HandleImageWidget(image:image!),
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: AppConsts.radius8,
+      child: Container(
+        color: AppConsts.mainColor.withOpacity(.3),
+        child: HandleImageWidget(image: image),
+      ),
+    );
+  }
+}

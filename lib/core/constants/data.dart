@@ -55,3 +55,8 @@ List<TransportModel> transports = const [
     image: Assets.imagesBike,
   ),
 ];
+List<String> images = [
+  "https://vehicle-images.dealerinspire.com/0e3a-110005802/3MW69FF01R8D94196/8e9eb309870905788de3273dc78224d1.jpg",
+  "https://contactcars.fra1.cdn.digitaloceanspaces.com/contactcars-production/Images/Small/Engines/60199e1b110a623ace63566f_2c467fce-34ef-4c25-abd2-f13bb4e218ad.jpeg",
+  "https://euromotorsnews.com.br/wp-content/uploads/2020/01/novo-bmw-320i-deixe-a-tecnologia-te-conduzir.jpg",
+];
