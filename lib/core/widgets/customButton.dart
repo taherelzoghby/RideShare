@@ -39,6 +39,7 @@ class CustomButton extends StatelessWidget {
         overlayColor: MaterialStateProperty.all(
           AppConsts.mainColor.withOpacity(.5),
         ),
+
       ),
       child: Text(
         text,

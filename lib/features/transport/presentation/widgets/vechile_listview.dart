@@ -69,7 +69,7 @@ class _VehicleListViewState extends State<VehicleListView> {
 
 //build widget
   Widget _buildWidget(VehicleEntity vehicleEntity) {
-    return ItemVechile(
+    return ItemVehicle(
       vech: widget.vech,
       vehicleEntity: vehicleEntity,
     );

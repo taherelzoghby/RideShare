@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:ride_share/core/constants/strings.dart';
 import 'package:ride_share/core/constants/style.dart';
-import 'package:ride_share/core/widgets/customButton.dart';
 
 import '../../domain/entities/vechile_intity.dart';
 import 'info_item_vechile.dart';
+import 'section_buttons.dart';
 
-class ItemVechile extends StatelessWidget {
-  const ItemVechile({
+class ItemVehicle extends StatelessWidget {
+  const ItemVehicle({
     super.key,
     required this.vech,
     required this.vehicleEntity,
@@ -18,7 +17,6 @@ class ItemVechile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.sizeOf(context);
     return Padding(
       padding: AppConsts.allPadding8,
       child: AspectRatio(
@@ -27,43 +25,18 @@ class ItemVechile extends StatelessWidget {
           decoration: AppConsts.decorationRentalWidgetHome.copyWith(
             color: AppConsts.mainColor.withOpacity(.01),
           ),
-          child: Padding(
+          child: const Padding(
             padding: AppConsts.allPadding8,
             child: Column(
               children: [
-                const Expanded(
+                Expanded(
                   flex: 3,
                   child: InfoItemVechile(),
                 ),
-                SizedBox(height: size.height * .01),
+                AspectRatio(aspectRatio: AppConsts.aspect40on1),
                 Expanded(
                   flex: 2,
-                  child: Row(
-                    children: [
-                      const Spacer(),
-                      Expanded(
-                        flex: 12,
-                        child: CustomButton(
-                          text:StringsEn.bookLater,
-                          onTap: () {},
-                          background: AppConsts.white.withOpacity(.5),
-                          styleText: AppConsts.style16.copyWith(
-                            color: AppConsts.mainColor,
-                          ),
-                          isBorder: true,
-                        ),
-                      ),
-                      const Spacer(),
-                      Expanded(
-                        flex: 12,
-                        child: CustomButton(
-                          text: StringsEn.rideNow,
-                          onTap: () {},
-                        ),
-                      ),
-                      const Spacer(),
-                    ],
-                  ),
+                  child: SectionButtons(),
                 ),
               ],
             ),
