@@ -19,21 +19,30 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onTap,
-      borderRadius: AppConsts.radius8,
-      child: Container(
-        decoration: BoxDecoration(
-          color: background,
-          borderRadius: AppConsts.radius8,
-          border: isBorder ? Border.all(color: AppConsts.mainColor) : null,
+    return ElevatedButton(
+      onPressed: onTap,
+      style: ButtonStyle(
+        backgroundColor: MaterialStateProperty.all(
+          isBorder ? AppConsts.white.withOpacity(.8) : background,
         ),
-        child: Center(
-          child: Text(
-            text,
-            style: styleText,
+        shape: MaterialStateProperty.all(
+          RoundedRectangleBorder(
+            borderRadius: AppConsts.radius8,
           ),
         ),
+        side: MaterialStateProperty.all(
+          isBorder
+              ? const BorderSide(color: AppConsts.mainColor)
+              : BorderSide.none,
+        ),
+        elevation: MaterialStateProperty.all(2),
+        overlayColor: MaterialStateProperty.all(
+          AppConsts.mainColor.withOpacity(.5),
+        ),
+      ),
+      child: Text(
+        text,
+        style: styleText,
       ),
     );
   }
