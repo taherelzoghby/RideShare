@@ -31,21 +31,38 @@ class ItemVechile extends StatelessWidget {
             padding: AppConsts.allPadding8,
             child: Column(
               children: [
-                Expanded(
+                const Expanded(
                   flex: 3,
                   child: InfoItemVechile(),
                 ),
                 SizedBox(height: size.height * .01),
                 Expanded(
                   flex: 2,
-                  child: CustomButton(
-                    text: "${StringsEn.view} $vech ${StringsEn.list}",
-                    onTap: () {},
-                    background: AppConsts.white.withOpacity(.5),
-                    styleText: AppConsts.style16.copyWith(
-                      color: AppConsts.mainColor,
-                    ),
-                    isBorder: true,
+                  child: Row(
+                    children: [
+                      const Spacer(),
+                      Expanded(
+                        flex: 12,
+                        child: CustomButton(
+                          text:StringsEn.bookLater,
+                          onTap: () {},
+                          background: AppConsts.white.withOpacity(.5),
+                          styleText: AppConsts.style16.copyWith(
+                            color: AppConsts.mainColor,
+                          ),
+                          isBorder: true,
+                        ),
+                      ),
+                      const Spacer(),
+                      Expanded(
+                        flex: 12,
+                        child: CustomButton(
+                          text: StringsEn.rideNow,
+                          onTap: () {},
+                        ),
+                      ),
+                      const Spacer(),
+                    ],
                   ),
                 ),
               ],

@@ -33,7 +33,7 @@ class _VehicleListViewState extends State<VehicleListView> {
   addVehicles() {
     vehicles.addAll(widget.vehicles);
     Future future = Future(() {});
-    for (var vehicle in vehicles) {
+    for (VehicleEntity vehicle in vehicles) {
       future = future.then(
         (value) => Future.delayed(const Duration(milliseconds: 100)).then(
           (value) {
