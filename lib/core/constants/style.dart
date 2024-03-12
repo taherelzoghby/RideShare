@@ -4,6 +4,7 @@ abstract class AppConsts {
   static const Color mainColor = Color.fromRGBO(8, 183, 131, 1);
   static const Color mainColor2 = Color.fromRGBO(0, 137, 85, 1);
   static const Color white = Colors.white;
+  static const Color starColor = Color.fromRGBO(251, 192, 45, 1);
   static const Color neutral900 = Color.fromRGBO(17, 24, 39, 1);
   static const Color neutral800 = Color.fromRGBO(31, 41, 55, 1);
   static const Color neutral700 = Color.fromRGBO(55, 65, 81, 1);
