@@ -11,14 +11,12 @@ class SectionInformation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: ListView(
-        children: const [
-          SectionCarInfo(),
-          AspectRatio(aspectRatio: AppConsts.aspect16on1),
-          SectionDriverInfo(),
-        ],
-      ),
+    return const Column(
+      children: [
+        SectionCarInfo(),
+        AspectRatio(aspectRatio: AppConsts.aspect16on1),
+        SectionDriverInfo(),
+      ],
     );
   }
 }

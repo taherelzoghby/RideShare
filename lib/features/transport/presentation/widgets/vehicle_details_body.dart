@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:ride_share/core/constants/style.dart';
-import 'package:ride_share/features/transport/presentation/widgets/section_information.dart';
-
-import 'section_name_rating.dart';
-import 'section_vehicles.dart';
+import 'package:ride_share/features/transport/presentation/widgets/section_buttons.dart';
+import 'content_details_vehicle.dart';
 
 class VehicleDetailsBody extends StatelessWidget {
   const VehicleDetailsBody({super.key});
@@ -14,13 +14,10 @@ class VehicleDetailsBody extends StatelessWidget {
       padding: AppConsts.mainPadding,
       child: Column(
         children: [
-          AspectRatio(aspectRatio: AppConsts.aspect20on2),
-          SectionNameRating(),
-          AspectRatio(aspectRatio: AppConsts.aspect20on2),
-          SectionVehicles(),
-          AspectRatio(aspectRatio: AppConsts.aspect20on2),
-          SectionInformation(),
+          ContentDetailsVehicle(),
           AspectRatio(aspectRatio: AppConsts.aspect16on1),
+          SectionButtons(),
+          AspectRatio(aspectRatio: AppConsts.aspect40on1),
         ],
       ),
     );
