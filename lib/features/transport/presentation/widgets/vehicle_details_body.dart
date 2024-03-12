@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:ride_share/core/constants/style.dart';
+import 'package:ride_share/features/transport/presentation/widgets/section_information.dart';
 
 import 'section_name_rating.dart';
 import 'section_vehicles.dart';
@@ -18,6 +19,8 @@ class VehicleDetailsBody extends StatelessWidget {
           AspectRatio(aspectRatio: AppConsts.aspect20on2),
           SectionVehicles(),
           AspectRatio(aspectRatio: AppConsts.aspect20on2),
+          SectionInformation(),
+          AspectRatio(aspectRatio: AppConsts.aspect16on1),
         ],
       ),
     );

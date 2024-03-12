@@ -1,6 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ride_share/core/helper/custom_animation.dart';
+import 'package:ride_share/core/widgets/photo_view.dart';
 import 'package:ride_share/features/auth/presentation/pages/phone_and_email_verification_view.dart';
 import 'package:ride_share/features/auth/presentation/pages/phone_verification_view.dart';
 import 'package:ride_share/features/auth/presentation/pages/profile_view.dart';
@@ -28,6 +29,7 @@ const navPath = '/navPath';
 const selectTransportPath = '/selectTransport';
 const availableVehicleForRidePath = '/availableVechilePath';
 const detailsVehiclePath = '/detailsVehiclePath';
+const imageViewPath = '/imageViewPath';
 final router = GoRouter(
   routes: [
     GoRoute(
@@ -133,6 +135,17 @@ final router = GoRouter(
         state: state,
         child: const VehicleDetailsView(),
       ),
+    ),
+    GoRoute(
+      path: imageViewPath,
+      pageBuilder: (context, state) {
+        String image = state.extra as String;
+        return buildPageWithDefaultTransition(
+          context: context,
+          state: state,
+          child: ImageView(image: image),
+        );
+      },
     ),
   ],
 );

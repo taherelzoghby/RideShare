@@ -37,6 +37,7 @@ abstract class StringsEn {
   static const String name = 'Name';
   static const String email = 'Email';
   static const String yourMobilePhone = 'Your mobile number';
+  static const String phoneNumber = 'mobile number';
   static const String gender = 'Gender';
   static const String bySigningUp1 = 'By signing up. you agree to the ';
   static const String bySigningUp2 = 'Terms of service ';
@@ -139,8 +140,11 @@ abstract class StringsEn {
   static const String kph = 'Kph';
   static const String mph = 'mph';
   static const String sec = 'sec';
-  static const String carFeatures = 'Car features';
+  static const String carInformation = 'Car Information';
+  static const String driverInformation = 'Driver Information';
   static const String model = 'Model';
+  static const String drivingLicense ='Driving License';
+  static const String photo ='Photo';
   static const String capacity = 'Capacity';
   static const String color = 'Color';
   static const String fuelType = 'Fuel type';
