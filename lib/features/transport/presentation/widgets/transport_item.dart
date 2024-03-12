@@ -18,7 +18,7 @@ class TransportItem extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return InkWell(
       onTap: () => GoRouter.of(context).push(
-        avaiableVechileForRidePath,
+        availableVehicleForRidePath,
         extra: transportModel.name,
       ),
       child: Container(

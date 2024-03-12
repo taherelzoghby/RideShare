@@ -1,4 +1,3 @@
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ride_share/core/helper/custom_animation.dart';
@@ -15,6 +14,7 @@ import 'package:ride_share/features/transport/presentation/pages/select_transpor
 
 import '../../features/boarding/presentation/pages/board_view.dart';
 import '../../features/nav/presentation/pages/nav_view.dart';
+import '../../features/transport/presentation/pages/vehicle_details_view.dart';
 
 const boardPath = '/';
 const welcomePath = '/welcome';
@@ -26,7 +26,8 @@ const signInPath = '/signIn';
 const phoneAndEmailVerificationPath = '/phoneAndEmailVerification';
 const navPath = '/navPath';
 const selectTransportPath = '/selectTransport';
-const avaiableVechileForRidePath = '/availableVechilePath';
+const availableVehicleForRidePath = '/availableVechilePath';
+const detailsVehiclePath = '/detailsVehiclePath';
 final router = GoRouter(
   routes: [
     GoRoute(
@@ -113,7 +114,7 @@ final router = GoRouter(
       ),
     ),
     GoRoute(
-      path: avaiableVechileForRidePath,
+      path: availableVehicleForRidePath,
       pageBuilder: (context, state) {
         String vech = state.extra as String;
         return buildPageWithDefaultTransition(
@@ -124,6 +125,14 @@ final router = GoRouter(
           ),
         );
       },
+    ),
+    GoRoute(
+      path: detailsVehiclePath,
+      pageBuilder: (context, state) => buildPageWithDefaultTransition(
+        context: context,
+        state: state,
+        child: const VehicleDetailsView(),
+      ),
     ),
   ],
 );

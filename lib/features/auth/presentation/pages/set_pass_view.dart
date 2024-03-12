@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:ride_share/core/constants/style.dart';
-
-import '../../../../core/constants/strings.dart';
+import 'package:ride_share/core/widgets/build_app_bar.dart';
 import '../widgets/set_pass_body.dart';
 
 class SetPassView extends StatelessWidget {
@@ -11,20 +8,7 @@ class SetPassView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leadingWidth: MediaQuery.sizeOf(context).width * .25,
-        leading: TextButton.icon(
-          onPressed: () => GoRouter.of(context).pop(),
-          icon: const Icon(
-            Icons.arrow_back_ios,
-            color: AppConsts.neutral500,
-          ),
-          label: const Text(
-            StringsEn.back,
-            style: AppConsts.style16,
-          ),
-        ),
-      ),
+      appBar: buildAppBar(context),
       body: const SafeArea(
         child: SetPassBody(),
       ),
